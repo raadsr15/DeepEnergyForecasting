@@ -42,24 +42,46 @@ All values are measured in **megawatts (MW)**.
 
 ---
 
-## 🧠 Models Implemented
+## 🔧 Project Workflow Overview
 
-- ✅ Recurrent Neural Network (RNN)  
-- ✅ Long Short-Term Memory (LSTM)  
-- ✅ Gated Recurrent Unit (GRU)  
-
-Each model is trained on past 24-hour sequences to predict the next hour’s consumption.
+This project explores time series forecasting using a real-world energy dataset from Romania. The goal is to predict hourly electricity consumption based on historical production and consumption data. The pipeline consists of two main phases: **Exploratory Data Analysis (EDA)** and **Deep Learning-based Forecasting**.
 
 ---
 
-## 📊 Evaluation Metrics
+### 📊 1. Exploratory Data Analysis (EDA)
 
-Each model is evaluated using:
+- Loaded and parsed timestamp data for proper datetime handling.
+- Inspected data dimensions, column uniqueness, and missing values.
+- Plotted electricity **consumption and production trends** over time.
+- Visualized the contribution of different energy sources:
+  - `Nuclear`, `Wind`, `Solar`, `Coal`, `Oil and Gas`, `Hydroelectric`, `Biomass`
+- Analyzed **import vs. export** patterns by comparing production vs. consumption.
+
+---
+
+### 🤖 2. Forecasting Algorithms
+
+Three deep learning models were implemented to forecast hourly electricity consumption using the previous 24-hour window:
+
+- ✅ **Recurrent Neural Network (RNN):**
+  - Built using TensorFlow/Keras.
+  - Two stacked `SimpleRNN` layers followed by a dense layer.
+
+- ✅ **Long Short-Term Memory (LSTM):**
+  - Better suited for long-range dependencies.
+  - Architecture includes two `LSTM` layers and a final dense output.
+
+- ✅ **Gated Recurrent Unit (GRU):**
+  - Efficient and comparable in performance to LSTM.
+  - Two `GRU` layers followed by a dense regression layer.
+
+---
+
+Each model was evaluated using the following metrics:
+
 - **R² Score**
 - **Mean Absolute Error (MAE)**
 - **Mean Squared Error (MSE)**
 - **Root Mean Squared Error (RMSE)**
 
----
-
-## 📁 Project Structure
+Visualizations include actual vs. predicted line plots and residual error distributions to interpret performance.
