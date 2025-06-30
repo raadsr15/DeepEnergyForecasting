@@ -106,3 +106,26 @@ Visualizations include actual vs. predicted line plots and residual error distri
 
 
 ---
+
+
+##  Installation
+
+To get started with this project, follow the steps below:
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/raadsr15/DeepEnergyForecasting.git
+cd your-repo-name
+
+2. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Train the model and evaluate model performance
+   
+```bash
+jupyter notebook electricityConsumptionAndProductioction.ipynb
+```
