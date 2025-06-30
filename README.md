@@ -85,3 +85,24 @@ Each model was evaluated using the following metrics:
 - **Root Mean Squared Error (RMSE)**
 
 Visualizations include actual vs. predicted line plots and residual error distributions to interpret performance.
+
+## 📈 Results
+
+| Model |   R² Score   |     MAE    |     MSE    |    RMSE    |
+|-------|--------------|------------|------------|------------|
+| RNN   | *0.965976*   | *0.018754* | *0.000774* | *0.027816* |
+| LSTM  | *0.957680*   | *0.021208* | *0.000962* | *0.031021* |
+| GRU   | *0.959681*   | *0.020224* | *0.000917* | *0.030279* |
+
+> 📌 *RNN performed the best among the models with the lowest error metrics and highest R² score.*
+
+> 📊 *LSTM also showed strong performance and was more stable during training.*
+
+
+
+
+![image](https://github.com/user-attachments/assets/a095fdef-a0aa-404d-8090-1400a73afaac)
+
+
+
+---
