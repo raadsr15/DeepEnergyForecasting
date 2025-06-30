@@ -117,6 +117,7 @@ To get started with this project, follow the steps below:
 ```bash
 git clone https://github.com/raadsr15/DeepEnergyForecasting.git
 cd your-repo-name
+```
 
 2. Install dependencies:
 
