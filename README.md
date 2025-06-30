@@ -1,6 +1,12 @@
-# ⚡ Energy Time Series Forecasting with Deep Learning
+#  Energy Time Series Forecasting with Deep Learning
 
-This project applies deep learning techniques to forecast electricity consumption using hourly time series data from Romania. It includes exploratory data analysis (EDA), model building using RNN, LSTM, and GRU, and model comparison based on evaluation metrics and visualization.
+In today's data-driven energy landscape, accurate forecasting of electricity consumption plays a vital role in grid stability, energy trading, and sustainable resource allocation. This project focuses on developing a robust deep learning pipeline to forecast hourly electricity consumption using real-world time series data from Romania, a country known for its diverse energy mix that includes nuclear, hydro, wind, solar, biomass, oil, and coal.
+
+The dataset spans over six years of hourly records, capturing not only total consumption and production but also the distribution of production by source. This granularity allows for modeling complex dependencies between energy generation patterns and consumption behavior. We perform initial exploratory data analysis (EDA) to uncover trends, seasonalities, and correlations in the dataset.
+
+We implement and compare three widely-used sequence modeling architectures: Recurrent Neural Networks (RNN), Long Short-Term Memory (LSTM), and Gated Recurrent Units (GRU). Each model is trained on past 24-hour windows to predict the next hour's consumption. The models are evaluated using key metrics like R² Score, MAE, and RMSE, and visualized through prediction vs. actual plots and residual distributions.
+
+This project not only demonstrates the power of deep learning in time series forecasting but also serves as a reproducible template for other energy or resource demand prediction problems. All code, visualizations, and evaluation outputs are organized and open-sourced for further exploration and improvement.
 
 ---
 
@@ -8,7 +14,7 @@ This project applies deep learning techniques to forecast electricity consumptio
 
 **Source:** [Hourly Electricity Consumption and Production in Romania on Kaggle](https://www.kaggle.com/datasets/stefancomanita/hourly-electricity-consumption-and-production/data)
 
-This dataset contains hourly time series data of electricity **consumption and production in Romania**, updated as of **28 March 2025**. It spans **over 6 years**, offering a rich and diverse dataset for energy forecasting.
+This dataset contains hourly time series data of electricity consumption and production in Romania, covering a span of more than six years. It offers a comprehensive view of the country's energy dynamics, with detailed breakdowns of electricity generation by source — including nuclear, hydro, wind, solar, biomass, oil and gas, and coal. The inclusion of both renewable and non-renewable sources makes it ideal for exploring real-world forecasting challenges in a mixed energy grid.
 
 ### 🔧 Features
 - **Consumption** (in MW): Total electricity consumed hourly  
