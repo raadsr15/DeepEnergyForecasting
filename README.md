@@ -1,3 +1,6 @@
+
+![Flux_Dev_A_hightech_control_room_overlooking_a_glowing_map_of__1](https://github.com/user-attachments/assets/71e1291e-3d39-48ca-9682-f8235a2ac099)
+
 #  Energy Time Series Forecasting with Deep Learning
 
 In today's data-driven energy landscape, accurate forecasting of electricity consumption plays a vital role in grid stability, energy trading, and sustainable resource allocation. This project focuses on developing a robust deep learning pipeline to forecast hourly electricity consumption using real-world time series data from Romania, a country known for its diverse energy mix that includes nuclear, hydro, wind, solar, biomass, oil, and coal.
